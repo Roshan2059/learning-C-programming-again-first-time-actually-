@@ -9,5 +9,3 @@ int main(){
 	}
 	while(a <= 10);
 }
-
-//advanced do whiile loop
