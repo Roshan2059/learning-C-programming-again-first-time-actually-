@@ -6,6 +6,6 @@ int main(){
 		if(i >= 10){
 			printf("%d\n", i);
 		}
-		i++;	
+		i++; 	
 	}
 }

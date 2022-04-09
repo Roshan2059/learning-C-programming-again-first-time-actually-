@@ -1,13 +1,22 @@
 #include<stdio.h>
 
 int main(){
-	int a, b, c, d;
-	
+	int temp, i;
+	int arr[4];
 	printf("Enter four numbers: (Press enter to enter another number)\n");
-	scanf("%d\n", &a);
-	scanf("%d\n", &b);
-	scanf("%d\n", &c);
-	scanf("%d", &d);
+	scanf("%d\n", &arr[0]);
+	scanf("%d\n", &arr[1]);
+	scanf("%d\n", &arr[2]);
+	scanf("%d", &arr[3]);
+	
+	temp = arr[0];
+	for(i = 1; i < 4; i++){
+		if(temp < arr[i]){
+			temp = arr[i];
+		}
+	}
+	printf("The greatest number is %d", temp);
+	
 	
 //	if(a > b){
 //		if(a > c){
@@ -33,31 +42,31 @@ int main(){
 //	else{
 //		printf("%d is the greatest among the four numbers entered by you.", d);
 //	}
-	
-	if(a > b){
-		if(a > c){
-			if(a > d){
-				printf("%d is greater among the four numbers entered by you.", a);
-			}
-			else{
-				printf("%d is greater among the four numbers entered by you.", d);
-			}
-		}
-	}
-	else if(b > c){
-		if(b > d){
-				printf("%d is greatest among the four numbers entered by you.", b);
-			}
-			else{
-				printf("%d is greatest among the four numbers entered by you.", d);	
-			}
-	}	
-	else if(c > d){
-				printf("%d is the greatest among the four numbers entered by you.", c);
-		}
-	else{
-		printf("%d is the greatest among the four numbers entered by you.", d);
-	}
+//	
+//	if(a > b){
+//		if(a > c){
+//			if(a > d){
+//				printf("%d is greater among the four numbers entered by you.", a);
+//			}
+//			else{
+//				printf("%d is greater among the four numbers entered by you.", d);
+//			}
+//		}
+//	}
+//	else if(b > c){
+//		if(b > d){
+//				printf("%d is greatest among the four numbers entered by you.", b);
+//			}
+//			else{
+//				printf("%d is greatest among the four numbers entered by you.", d);	
+//			}
+//	}	
+//	else if(c > d){
+//				printf("%d is the greatest among the four numbers entered by you.", c);
+//		}
+//	else{
+//		printf("%d is the greatest among the four numbers entered by you.", d);
+//	}
 
 //	int a, b, c;
 //	
