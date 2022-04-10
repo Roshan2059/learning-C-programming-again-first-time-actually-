@@ -8,4 +8,5 @@ int main(){
 		i++;
 	}
 	printf("The sum of first ten natural numbers is %d", sum);
+	
 }
