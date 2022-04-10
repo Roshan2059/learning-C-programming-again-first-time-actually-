@@ -9,9 +9,9 @@ int main(){
 	for(i = 1; i <= n ; i++){
 		mul = mul * i;
 	}
-	
 	printf("The factorial is %d", mul);
 }
+
 //#include<stdio.h>
 //
 //int main(){
